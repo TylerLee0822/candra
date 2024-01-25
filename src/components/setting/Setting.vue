@@ -22,7 +22,7 @@
         <color-checkbox v-for="(color, index) in palettes" :key="index" :color="color" :value="index" />
       </color-checkbox-group>
     </setting-item>
-    <a-divider/>
+ 
     <setting-item :title="$t('navigate.title')">
       <img-checkbox-group
         @change="values => setLayout(values[0])"
@@ -57,7 +57,7 @@
         </a-list-item>
       </a-list>
     </setting-item>
-    <a-divider />
+  
     <setting-item :title="$t('other.title')">
       <a-list :split="false">
         <a-list-item>
@@ -74,7 +74,7 @@
         </a-list-item>
       </a-list>
     </setting-item>
-    <a-divider />
+
     <setting-item :title="$t('animate.title')">
       <a-list :split="false">
         <a-list-item>
